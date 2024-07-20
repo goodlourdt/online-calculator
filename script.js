@@ -102,6 +102,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        if (target.classList.contains('equal-sign')) {
+            handleOperator('=');
+            return;
+        }
+
         inputDigit(target.value);
     });
 
